@@ -69,8 +69,6 @@ function New-AcronisCCPartnerToken {
     
   )
 
-
-
   function Private:Get-TOTP
   # When writing the Posh HMAC TOTP return i found somoene already did it.
   # No use in reinventing the wheel.
