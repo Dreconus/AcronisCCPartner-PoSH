@@ -15,7 +15,7 @@ function Get-AcronisCCPartnerUri ([string]$UserName) {
   }
 }
 
-function New-AcronisCCPartnerInitialToken {
+function New-AcronisCCPartnerToken {
 
   [CmdletBinding(DefaultParameterSetName="TOTPCode")]
   param(
@@ -190,7 +190,7 @@ function Get-AcronisCCPartnerAccountInfo {
 
     [Parameter(Mandatory=$true, Position = 1,
       ValueFromPipelineByPropertyName=$true,
-      HelpMessage="Enter access token from New-AcronisCCPartnerInitialToken.'")]
+      HelpMessage="Enter access token from New-AcronisCCPartnerToken.'")]
     [Alias('access_token')]
     [string]$accessToken
 
@@ -222,7 +222,7 @@ function Get-AcronisCCPartnerTenant {
   
     [Parameter(Mandatory=$true, Position = 2,
       ValueFromPipelineByPropertyName=$true,
-      HelpMessage="Enter access token from New-AcronisCCPartnerInitialToken.'")]
+      HelpMessage="Enter access token from New-AcronisCCPartnerToken.'")]
     [Alias('access_token')]
     [string]$accessToken
 
@@ -253,7 +253,7 @@ function Get-AcronisCCPartnerTenantUsage {
   
     [Parameter(Mandatory=$true, Position = 2,
       ValueFromPipelineByPropertyName=$true,
-      HelpMessage="Enter access token from New-AcronisCCPartnerInitialToken.'")]
+      HelpMessage="Enter access token from New-AcronisCCPartnerToken.'")]
     [Alias('access_token')]
     [string]$accessToken
 
@@ -287,7 +287,7 @@ function Get-AcronisCCPartnerChildren {
   
     [Parameter(Mandatory=$true, Position = 3,
       ValueFromPipelineByPropertyName=$true,
-      HelpMessage="Enter access token from New-AcronisCCPartnerInitialToken.'")]
+      HelpMessage="Enter access token from New-AcronisCCPartnerToken.'")]
     [Alias('access_token')]
     [string]$accessToken
 
@@ -322,7 +322,7 @@ function New-AcronisCCPartnerClient {
   
     [Parameter(Mandatory=$true, Position = 3,
       ValueFromPipelineByPropertyName=$true,
-      HelpMessage="Enter access token from New-AcronisCCPartnerInitialToken.'")]
+      HelpMessage="Enter access token from New-AcronisCCPartnerToken.'")]
     [Alias('access_token')]
     [string]$accessToken
 
@@ -363,7 +363,7 @@ function Get-AcronisCCPartnerClient {
   
     [Parameter(Mandatory=$true, Position = 2,
       ValueFromPipelineByPropertyName=$true,
-      HelpMessage="Enter access token from New-AcronisCCPartnerInitialToken.'")]
+      HelpMessage="Enter access token from New-AcronisCCPartnerToken.'")]
     [Alias('access_token')]
     [string]$accessToken
 
@@ -394,7 +394,7 @@ function Remove-AcronisCCPartnerClient {
   
     [Parameter(Mandatory=$true, Position = 2,
       ValueFromPipelineByPropertyName=$true,
-      HelpMessage="Enter access token from New-AcronisCCPartnerInitialToken.'")]
+      HelpMessage="Enter access token from New-AcronisCCPartnerToken.'")]
     [Alias('access_token')]
     [string]$accessToken
 
