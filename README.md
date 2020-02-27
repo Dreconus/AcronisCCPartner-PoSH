@@ -7,7 +7,7 @@ Token Examples:
 
 1. First set credenials for either client auth or user auth.
 2. Assign new token to variable. This variable can be piped to all commands and will pass the token as well as the URI. 
-3. Optionally enter your TOTP code or the shared secret. 
+3. Optionally enter your TOTP code or the TOTP shared secret. 
 4. DC is optional with user account and required with client account.
   ```
   $creds = Get-Credential
